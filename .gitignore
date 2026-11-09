@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Firmware images & raw partition dumps (DO NOT COMMIT LARGE BINARIES)
+*.img
+*.bin
+*.7z
+*.zip
+*.tar.gz
+*.apkm
+*.xapk
+firmware/
+images/
+download/
+output/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDEs & editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+venv/
+.venv/

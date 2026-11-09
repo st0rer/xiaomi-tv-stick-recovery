@@ -1,0 +1,4 @@
+# Pure Python standard library is used for maximum compatibility across macOS, Linux, and Windows.
+# Requirements:
+# - Python >= 3.8
+# - Android Platform Tools (adb & fastboot) installed and in system PATH (or specified via flags)
