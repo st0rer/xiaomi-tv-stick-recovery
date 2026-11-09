@@ -25,8 +25,8 @@
   Automatically corrects system clock desync via ADB, restoring functional Wi-Fi scanning.
 * **🎯 Remote OK-Click Bug Fix:**
   Disables `mitv.service` and optimizes keypress timings so apps open instantly without triggering the annoying *"Open / Move / Remove"* context menu.
-* **🚀 24-Package Safe Debloat:**
-  Disables Xiaomi analytics, tracking, PatchWall, and system ballast while keeping Google Play, Widevine DRM (4K Netflix/Kinopoisk), and Cast fully functional.
+* **🚀 37-Package Safe Debloat:**
+  Disables Xiaomi analytics, tracking, PatchWall ad rows, auto-installers, and system ballast while keeping Google Play, Widevine DRM (4K Netflix/Kinopoisk), and Cast fully functional.
 * **📦 Smart APK & Bundle (.apkm / .xapk) Installer:**
   Automatically detects device ABI (`armeabi-v7a`), extracts APKMirror split bundles, filters incompatible architectures, and installs via `adb install-multiple`.
 

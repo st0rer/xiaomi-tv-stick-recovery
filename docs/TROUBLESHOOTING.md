@@ -103,3 +103,22 @@ This guide covers real-world edge cases, hardware pitfalls, and software anomali
   adb shell settings put secure long_press_timeout 800
   ```
   Apps will now launch instantly on a standard click.
+
+---
+
+## 6. Global Firmware vs. Domestic China Firmware (`mitv.service`)
+
+* **On Global / European Firmware (e.g., Xiaomi TV Stick 4K `soul`, Global TV Box S `daisy`):**
+  Disabling `mitv.service` is completely safe. Global models use standard Android TV / Google TV Settings (`com.android.tv.settings`). Disabling `mitv.service` only stops PatchWall tracking and the delayed `AccessibilityKeyService`.
+* **On Domestic Chinese Firmware (e.g., MiTV-ASTP0, Chinese market MIUI TV):**
+  Do **NOT** disable `mitv.service` on Chinese domestic models. On those models, the proprietary Xiaomi TV Settings app (`com.xiaomi.mitv.settings`) depends directly on `mitv.service/.TvServer`. If disabled on Chinese ROMs, the Settings app crashes with `NumberFormatException: For input string: "NULL" (SoundView.init)`.
+  * *If you accidentally disabled it on a CN TV:* Re-enable it via `adb shell pm enable mitv.service && adb shell am startservice -n mitv.service/.TvServer`.
+
+---
+
+## 7. Replacing Stock Launcher (`launcherx`) Warning
+
+Some popular community tools (like CleanYourTV) aggressively disable `com.google.android.apps.tv.launcherx` and `com.google.android.tungsten.setupwraith`.
+> [!CAUTION]
+> Never disable `com.google.android.apps.tv.launcherx` unless you have already installed and verified an alternative custom launcher (such as CleanYourTV Launcher, Projectivy Launcher, or FLauncher). Disabling `launcherx` without an alternative launcher will leave your TV without any home screen, resulting in a black screen upon boot.
+

@@ -53,25 +53,40 @@ BLOATWARE_PACKAGES = [
     ("com.xiaomo.tv.milegal", "Xiaomi Legal & Privacy Tracking"),
     ("com.xm.webcontent", "Xiaomi Promo Web Content & Ads"),
     ("com.xiaomi.tvqs.overseas", "Xiaomi TV Quick Survey Overseas"),
+    ("com.xiaomi.tvqs.overseas.y24", "Xiaomi Quick Survey 2024 Overseas"),
     ("com.xiaomi.android.tvsetup.partnercustomizer", "Xiaomi Setup Partner Customizer"),
     ("com.xiaomi.mitv.updateservice", "Xiaomi OTA Update Service (Prevents corrupt OTA bricks)"),
+    ("com.mitv.cloudcontrol", "Mi TV Cloud Control Telemetry"),
 
     # Xiaomi PatchWall & Stock Overlays
     ("com.mitv.tvhome.atv", "PatchWall ATV Integration"),
+    ("com.mitv.tvhome.oemtab", "PatchWall OEM Partner Promo Tab"),
     ("com.mitv.tvhome.michannel", "Mi Channels Promo Feed"),
     ("com.mitv.tvhome.mitvplus", "Mi TV Plus Free Live TV Feed"),
+    ("com.mitv.shoplugin", "Mi TV Shop Plugin"),
+    ("com.xiaomi.floatingframe", "Xiaomi Floating Banner Daemon"),
     ("com.xiaomi.mimusic2", "Mi Music Stock Player"),
     ("com.mitv.videoplayer", "Mi Stock Video Player"),
     ("com.mitv.dream", "Mi Screensaver / Dream Service"),
     ("com.xiaomi.mitv.smartshare", "Mi SmartShare Background Service"),
+    ("com.xiaomi.screenrecorder", "Xiaomi Screen Recorder Background Service"),
+    ("com.xiaomi.gamecenter.sdk.service.mibox", "Xiaomi Game Center SDK"),
+
+    # Partner Auto-Installers (Silent background app downloads)
+    ("android.autoinstalls.config.soc.amlogic", "Amlogic Partner Auto-install Configuration"),
+    ("android.autoinstalls.config.xioami.mibox3", "Xiaomi Partner Auto-install Daemon (sic)"),
+    ("android.autoinstalls.config.xiaomi.amelie", "Xiaomi Partner Auto-install Amelie"),
 
     # Preinstalled Third-party / Google ballast
     ("com.amazon.amazonvideo.livingroom", "Amazon Prime Video preinstalled stub"),
     ("com.netflix.ninja", "Netflix preinstalled client"),
     ("com.netflix.tokenmanager", "Netflix Token Manager"),
+    ("com.google.android.videos", "Google TV / Play Movies legacy video app"),
     ("com.google.android.play.games", "Google Play Games"),
     ("com.google.android.youtube.tvmusic", "YouTube Music TV client"),
+    ("com.google.android.youtube.tvkids", "YouTube Kids preinstalled client"),
     ("com.google.android.marvin.talkback", "Android Accessibility TalkBack"),
+    ("com.google.android.partnersetup", "Google Partner Setup (RLZ attribution pings)"),
 
     # Background feedback & printing
     ("com.android.printspooler", "Android Print Spooler (Unnecessary on TV)"),
